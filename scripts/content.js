@@ -1,10 +1,9 @@
-function autofillfields(input){
-    //check if input field you want to select exists or not 
-    if(!input) {
-        return;
-    }
-
-    const test = "123"
-    const test2 = 123
-
-}
+chrome.storage.local.get("profile",({profile}) => {
+    if(!profile) return;
+    // 1. find all input and textarea fields
+    const label = document.querySelector(`label[for="${input.id}"]`);
+    
+    // 2. inspect each field's name/id/placeholder/label
+    
+    // 3. if it looks like name/email/phone/address, fill it
+});

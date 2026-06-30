@@ -4,9 +4,15 @@
     "version":"1.0",
     "manifest_version":3,
     "action":{
-        "default_popup" : "./scripts/popup.html"
+        "default_popup" : "./popup/popup.html"
     },
-    "permissions":["storage","activeTab","scripting"]
-
+    "permissions":["storage","activeTab","scripting"],
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["scripts/content.js"],
+            "run_at":"document_idle"
+    }]
+    
 
 }
