@@ -1,106 +1,179 @@
 const FIELD_RULES = {
-  firstNameChi: [
-    "中文名",
-    "名字",
-    "名",
-    "first name chinese",
-    "chinese first name",
-    "given name chinese",
-    "chinese given name",
-  ],
-
-  lastNameChi: [
-    "中文姓氏",
-    "姓氏",
-    "姓",
-    "last name chinese",
-    "chinese last name",
-    "surname chinese",
-    "chinese surname",
-    "family name chinese",
-    "chinese family name",
-  ],
-
-  firstNameEng: [
-    "first name",
-    "given name",
-    "english first name",
-    "first name english",
-    "given name english",
-    "english given name",
-  ],
-
-  lastNameEng: [
-    "last name",
-    "surname",
-    "family name",
-    "english last name",
-    "last name english",
-    "english surname",
-    "surname english",
-  ],
-
-  fullNameChi: [
-    "中文姓名",
-    "中文全名",
-    "姓名中文",
-    "全名中文",
-    "chinese full name",
-    "full name chinese",
-    "legal name chinese",
-  ],
-
-  fullNameEng: [
-    "full name",
-    "legal name",
-    "name",
-    "english full name",
-    "full name english",
-    "english name",
-  ],
-
-  email: [
-    "email",
-    "e-mail",
-    "email address",
-    "mail",
-  ],
-
-  phone: [
-    "phone",
-    "mobile",
-    "telephone",
-    "phone number",
-    "mobile number",
-    "contact number",
-  ],
-
-  address: [
-    "address",
-    "street address",
-    "residential address",
-    "home address",
-    "correspondence address",
-  ],
-
-  expectedSalary: [
-    "expected salary",
-    "expected monthly salary",
-    "expected wage",
-    "salary expectation",
-    "expected compensation",
-    "expected pay",
-  ],
-
-  currentSalary: [
-    "current salary",
-    "current monthly salary",
-    "present salary",
-    "existing salary",
-    "current compensation",
-    "current pay",
-  ],
-};
+    // Chinese name
+    firstNameChi: [
+      "中文名",
+      "名字",
+      "名",
+      "first name chinese",
+      "chinese first name",
+      "chineseGivenName",
+      "given name chinese",
+      "chinese given name",
+    ],
+  
+    lastNameChi: [
+      "中文姓氏",
+      "姓氏",
+      "姓",
+      "last name chinese",
+      "chinese last name",
+      "surname chinese",
+      "chinese surname",
+      "chineseSurname",
+      "family name chinese",
+      "chinese family name",
+    ],
+  
+    fullNameChi: [
+      "中文姓名",
+      "中文全名",
+      "姓名中文",
+      "全名中文",
+      "chinese full name",
+      "full name chinese",
+      "legal name chinese",
+    ],
+  
+    // English name
+    firstNameEng: [
+      "first name",
+      "given name",
+      "english first name",
+      "first name english",
+      "given name english",
+      "english given name",
+      "forename",
+    ],
+  
+    lastNameEng: [
+      "last name",
+      "surname",
+      "family name",
+      "english last name",
+      "last name english",
+      "english surname",
+      "surname english",
+      "family name english",
+    ],
+  
+    fullNameEng: [
+      "full name",
+      "legal name",
+      "english full name",
+      "full name english",
+      "english name",
+      "applicant name",
+      "candidate name",
+    ],
+  
+    // Contact
+    email: [
+      "email",
+      "e-mail",
+      "email address",
+      "mail",
+    ],
+  
+    phone: [
+      "phone",
+      "mobile",
+      "cellPhone",
+      "telephone",
+      "phone number",
+      "mobile number",
+      "contact number",
+      "tel",
+    ],
+  
+    phoneCountryCode: [
+      "country code",
+      "phone country code",
+      "mobile country code",
+      "dialing code",
+      "area code",
+    ],
+  
+    // Address
+    address: [
+      "address",
+      "residential address",
+      "home address",
+      "correspondence address",
+      "current address",
+      "permanent address",
+    ],
+  
+    street: [
+      "street",
+      "street address",
+      "address line 1",
+      "address 1",
+      "building",
+      "block",
+      "estate",
+      "road",
+      "flat",
+      "floor",
+      "room",
+    ],
+  
+    city: [
+      "city",
+      "town",
+      "district",
+      "region",
+      "state",
+      "province",
+    ],
+  
+    postalCode: [
+      "postal code",
+      "postcode",
+      "post code",
+      "zip",
+      "zip code",
+    ],
+  
+    country: [
+      "country",
+      "country/region",
+      "region/country",
+      "nationality country",
+    ],
+  
+    // Salary
+    expectedSalary: [
+      "expected salary",
+      "expected monthly salary",
+      "expected wage",
+      "salary expectation",
+      "expected compensation",
+      "expected pay",
+      "expected remuneration",
+    ],
+  
+    currentSalary: [
+      "current salary",
+      "current monthly salary",
+      "present salary",
+      "existing salary",
+      "current compensation",
+      "current pay",
+      "current remuneration",
+    ],
+  
+    // Work experience
+    workingExperience: [
+      "working experience",
+      "work experience",
+      "years of experience",
+      "total experience",
+      "relevant experience",
+      "professional experience",
+      "employment history",
+      "career history",
+    ],
+  };
 
 function getLabelText(field) {
     if (!field.id) return "";
